@@ -1,0 +1,19 @@
+<div class="header">
+  <div class="container">
+    <img src="http://media.tumblr.com/tumblr_m4yr1hTwjT1roj5qj.png">
+    <h1>Dye Gallery</h1>
+  </div>
+</div>
+
+<div class="dyes">
+  <div class="container">
+  
+    <% @dyes.each do |dye| %>
+    <div align="center" class="dye">
+      <p class="content"><%= dye.content %></p>
+      <div class="thumb" style="background-color: rgb(<%= dye.color %>);"></div>
+      
+    </div>
+    <% end %>
+  </div>
+</div>
